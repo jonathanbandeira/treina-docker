@@ -1,0 +1,34 @@
+{
+    "name": "jonathanbandeira/exemple",
+    "description": "teste",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+        "Treinamento\\Teste\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jonathanbandeira",
+            "email": "jonatanbandeira@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "scripts": {
+        "clear":[
+            "rm -f composer.lock",
+            "@composer clear-cache"
+        ],
+
+        "build-app": [
+            "@composer clear",
+            "@composer install"
+        ]
+           
+        
+        
+        
+    }
+}
